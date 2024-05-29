@@ -1,56 +1,45 @@
-import React from "react";
-import img from '../assets/zaid.webp'
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../assets/logo.webp';
 
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-function NavBar() {
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="">
-      <nav className=" position-relative navbar navbar-expand-md bg-dark border-bottom border-body m-0" data-bs-theme="dark">
-        <a className="navbar-brand" href="#">
-          <img className="mx-5" src={img} alt="Bootstrap" width="50" height="50" />
-        </a>
-        <div className="position-absolute start-50 ">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    <div className='bg-black text-yellow-500'>
+      <div className='flex justify-between items-center p-3 h-20'>
+        <div className='flex items-center'>
+          <img src={logo} alt="Logo" className='w-12 h-12 rounded-md' />
         </div>
-        <div className="navbar-collapse collapse justify-content-start ">
-          <div className=" navbar-nav ml-auto">
-            <div className="collapse navbar-collapse mx-2" id="navbarNav">.
-              <ul className="navbar-nav">
-                <li className="nav-item ">
-                  <Link to='/' className="navbar-brand text-warning-emphasis" href="#">Home</Link>
-                </li>
-                <li className="nav-item ">
-                  <Link to='about' className="navbar-brand text-warning-emphasis " href="#">About</Link>
-                </li>
-                <li className="nav-item ">
-                  <Link to='skills' className="navbar-brand text-warning-emphasis " href="#">Skills</Link>
-                </li>
-                <li className="nav-item ">
-                  <Link to='projects' className="navbar-brand text-warning-emphasis " href="#">Projects</Link>
-                </li>
-                <li className="nav-item ">
-                  <Link to='blogs' className="navbar-brand text-warning-emphasis " href="#">Blogs</Link>
-                </li>
-                <li className="nav-item ">
-                  <Link to='contacts' className="navbar-brand text-warning-emphasis " href="#">Contacs</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className='md:hidden'>
+          <button onClick={toggleMenu} className='text-2xl'>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
-        <div class="container-fluid justify-content-end">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-warning" type="submit">Search</button>
-          </form>
+        <div className='hidden md:flex space-x-4 text-lg font-semibold md:mr-2 lg:mr-5'>
+          <Link to='/' className='font-serif p-2'>Home</Link>
+          <Link to='/about' className='font-serif p-2'>About</Link>
+          <Link to='/skills' className='font-serif p-2'>Skills</Link>
+          <Link to='/projects' className='font-serif p-2'>Projects</Link>
+          <Link to='/contacts' className='font-serif p-2'>Contacts</Link>
         </div>
-      </nav>
+      </div>
+      {isOpen && (
+        <div className='lg:hidden flex flex-col items-center space-y-4 py-4'>
+          <Link to='/' className='p-2' onClick={toggleMenu}>Home</Link>
+          <Link to='/about' className='p-2' onClick={toggleMenu}>About</Link>
+          <Link to='/skills' className='p-2' onClick={toggleMenu}>Skills</Link>
+          <Link to='/projects' className='p-2' onClick={toggleMenu}>Projects</Link>
+          <Link to='/contacts' className='p-2' onClick={toggleMenu}>Contacts</Link>
+        </div>
+      )}
     </div>
-
   );
-}
+};
 
 export default NavBar;

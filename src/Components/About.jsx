@@ -1,69 +1,44 @@
-import React from 'react'
-import img1 from '../assets/img.webp'
+import React from 'react';
 
-function About() {
+const About = () => {
   return (
-    <div className='about bg-primary-subtle z-index-100'>
-      <h1 className='text-center bg-primary-subtle p-2 text-primary-emphasis'>
-        ABOUT ME
-      </h1>
-      <div className='container-fluid text-center my-4 '>
-        <div className='row'>
-          <div className='col-6'>
-            <img width='500' height='550' className='p-3' src={img1} alt="" />
+    <div className="bg-gray-900 min-h-screen w-screen flex flex-col items-center">
+      <div className="max-w-4xl mx-auto px-4 py-4">
+        <h1 className="text-4xl font-bold text-yellow-500 mb-6 text-center">
+          ABOUT ME
+        </h1>
+        <p className="text-lg text-yellow-300 mb-8 text-center">
+          Born and raised in Mumbai, India, I'm a versatile web developer proficient in both front-end and back-end development. With a strong foundation in the MERN stack, I bring fresh perspectives, enthusiasm, and a pragmatic problem-solving approach to the tech industry.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="bg-black shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-yellow-500 mb-4">
+              Frontend
+            </h2>
+            <p className="text-yellow-300">
+              Front-end expertise includes React.js from basic to advanced levels, along with essential CSS frameworks like Bootstrap and Tailwind CSS. Proficient in key JavaScript concepts such as Redux and API fetching etc.
+            </p>
           </div>
-          <div className='col-6 '>
-            <div className='align-items-start fs-5 mr-5 mt-3 p-3 text-primary-emphasis fw-semibold'>
-                <p>
-                I'm a Web developer with expertise of HTML, CSS, Javascript their library and frameworks. I have understanding of Bootstap, tailwind, Jquery and React.js
-                </p>
-                <p>
-                  Currently learning Next.js and gaining in depth knowledge of Database.
-                </p>
-                <p>
-                Im a hardworking programmer who loves to create new ideas and implement same in tech world. Currently living in Mumbai. I love learning new technologies.
-                </p>
-                <p>
-                  Having in depth understanding of Front end development and gaining knowledge of Back end too.
-                </p>
-                <div className='d-flex justify-content-center p-4 '> 
-                <div>
-                  <a href="https://in.linkedin.com/">
-                    <button className='btn btn-outline-primary'>
-                      Linkdin
-                    </button>
-                  </a>
-                </div> 
-                <div className='mx-2'>
-                  <a href="">
-                    <button className='btn btn-outline-primary'>
-                      Instagram
-                    </button>
-                  </a>
-                </div> 
-                <div>
-                  <a href="">
-                    <button className='btn btn-outline-primary'>
-                      Gmail
-                    </button>
-                  </a>
-                </div>
-                <div className='mx-2'>
-                  <a href="">
-                    <button className='btn btn-outline-primary'>
-                      Github
-                    </button>
-                  </a>
-                </div> 
-                </div>
-            </div>
-
+          <div className="bg-black shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-yellow-500 mb-4">
+              Backend
+            </h2>
+            <p className="text-yellow-300">
+              Back-end expertise includes Node.js and Express.js, enabling the development of robust and scalable server-side applications. Proficient in creating RESTful APIs, handling database interactions & implementing authentication.
+            </p>
+          </div>
+          <div className="bg-black shadow-lg p-6 rounded-lg transform transition duration-500 hover:scale-105">
+            <h2 className="text-2xl font-semibold text-yellow-500 mb-4">
+              Database
+            </h2>
+            <p className="text-yellow-300">
+              Proficient in database management with experience in both SQL and NoSQL databases. Skilled in MySQL for relational database design and complex querying, and in MongoDB for handling unstructured data and building scalable applications.
+            </p>
           </div>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
