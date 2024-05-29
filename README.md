@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! This project showcases my skills, projects, and experience as a developer. Below you will find information on how to view the portfolio, the technologies used, and a brief overview of the included projects.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Projects](#projects)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contact](#contact)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This is my personal portfolio website, built to showcase my projects and skills in web development. The portfolio includes details about my front-end and back-end development expertise, as well as links to live projects and their source code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Responsive design
+- Interactive project cards
+- Links to live projects and source code
+- Detailed sections on front-end, back-end, and other technologies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+### Front-End
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML5
+- Bootstrap
+- Tailwind CSS
+- jQuery
+- React.js
+- Redux
+- Next.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Back-End
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- Express.js
 
-### `npm run eject`
+### Others (Database & Deployment)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- MySQL
+- MongoDB
+- Render
+- Vercel
+- Netlify
+- Heroku
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Flashcard Generator
+- **Description:** A tool to create and manage flashcards for effective learning.
+- **Live Link:** [Flashcard Generator](https://flashcardgenerator1.netlify.app/)
+- **Source Code:** [GitHub](https://github.com/Shaikhmohamm/Capstone_FlashCard.git)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### YouTube Subscriber Tracker
+- **Description:** Track your YouTube subscriber count in real-time.
+- **Live Link:** [YouTube Subscriber Tracker](https://capastone-get-youtube-subbscribers.onrender.com/)
+- **Source Code:** [GitHub](https://github.com/Shaikhmohamm/Capastone-Get-Youtube-Subbscribers.git)
 
-## Learn More
+### Entertainment App
+- **Description:** An app to explore movies and TV series with personalized recommendations.
+- **Live Link:** [Entertainment App](https://full-stack-project-eosin.vercel.app/)
+- **Source Code:** [GitHub](https://github.com/Shaikhmohamm/Full_Stack_Project.git)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To view the portfolio, you can visit the live site at [GitHub Pages](https://my-portfolio-zaid.vercel.app/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Running in local
 
-### Analyzing the Bundle Size
+1. **Navigate to the Frontend Directory**: Move into the `my-portfolio` directory of the project.
+   ```bash
+   cd ../my-portfolio
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Install Dependencies**: Install the necessary dependencies using npm.
+   ```bash
+   npm install
+   ```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Start the Application**: Run the frontend application.
+   ``` change the base URL in axiosInstace.js to the backend URL
+   ```bash
+   npm run start
