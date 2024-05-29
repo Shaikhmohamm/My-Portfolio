@@ -89,19 +89,19 @@ const Contacts = () => {
         <div className="bg-white w-full md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-md flex flex-wrap gap-4 justify-center items-center p-4 shadow-lg">
           <button
             className="flex items-center rounded-lg p-2 border border-red-500 hover:bg-red-500 hover:text-white transition-all duration-300"
-            onClick={() => window.location.href='mailto:your-email@example.com'}
+            onClick={() => window.location.href='mailto:zaids808@gmail.com'}
           >
             <FaEnvelope className="mr-2" /> Email Me
           </button>
           <button
             className="flex items-center rounded-lg p-2 border border-blue-700 hover:bg-blue-700 hover:text-white transition-all duration-300"
-            onClick={() => window.open('https://www.linkedin.com/in/your-profile', '_blank')}
+            onClick={() => window.open('https://www.linkedin.com/in/zaid-shaikh-37b1b6171/', '_blank')}
           >
             <FaLinkedin className="mr-2" /> LinkedIn
           </button>
           <button
             className="flex items-center rounded-lg p-2 border border-gray-800 hover:bg-gray-800 hover:text-white transition-all duration-300"
-            onClick={() => window.open('https://github.com/your-profile', '_blank')}
+            onClick={() => window.open('https://github.com/Shaikhmohamm', '_blank')}
           >
             <FaGithub className="mr-2" /> GitHub
           </button>
